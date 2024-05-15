@@ -7,27 +7,32 @@ import heroMobile from "./assets/images/hero-mobile.jpg";
 const App = () => {
   return (
     <>
-      <header className="px-4 py-8 flex items-center top-0 left-0 w-full ">
+      <header className="px-4 py-8 flex items-center top-0 left-0 w-full md:w-[50%] md:pl-8 md:mt-10 lg:ml-10 xl:ml-40 ">
         <nav className="logo text-left">
           <img src={logo} alt="Base apparel" />
         </nav>
       </header>
-      <main >
-      <div className="hero-image   ">
-            <img src={heroMobile} className="w-full" alt="Mobile hero image" />
+      <main className="md:flex md:flex-row lg:px-8">
+      <div className="hero-image md:max-w-md  ">
+            <img src={heroMobile} className="w-full md:hidden" alt="Mobile hero image" />
+            {/* <img
+              src={heroDesktop}
+              className="hidden md:block md:min-h-full"
+              alt="hero image"
+            /> */}
       </div>
-        <section className="hero-content my-8">
+        <section className="hero-content my-8 md:max-w-sm md:pl-6 lg:max-w-md xl:max-w-lg xl:ml-28">
 
-          <article className="left-side flex flex-col justify-center items-center px-4 py-8 text-desaturatedRed ">
+          <article className="left-side flex flex-col justify-center items-center px-4 py-8 text-desaturatedRed md:text-left">
             <div className="coming-soon text-center ">
-              <h1 className="text-4xl font-[300] uppercase tracking-[0.3em] mb-4">
+              <h1 className="text-4xl font-[300] uppercase tracking-[0.3em] mb-4 md:text-left lg:text-6xl">
                 We're <br />
                 <span className=" font-[500] text-darkGrayishRed">
                   coming soon
                 </span>
               </h1>
 
-              <p className="message mt-6">
+              <p className="message mt-6 md:text-left xl:text-[18px]">
                 Hello fellow shoppers! We're currently building our new fashion
                 store. Add your email below to stay up-to-date with
                 announcements and our launch deals.
@@ -50,7 +55,7 @@ const App = () => {
                   <img
                     src={arrowIcon}
                     className=" text-desaturatedRed"
-                    alt="Arrow Icon"
+                    alt="Arrow icon"
                   />{" "}
                 </button>
               </form>
