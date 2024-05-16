@@ -1,7 +1,6 @@
 import logo from "./assets/images/logo.svg";
 import arrowIcon from "./assets/images/icon-arrow.svg";
 import errorIcon from "./assets/images/icon-error.svg";
-import heroDesktop from "./assets/images/hero-desktop.jpg";
 import heroMobile from "./assets/images/hero-mobile.jpg";
 
 const App = () => {
@@ -15,11 +14,6 @@ const App = () => {
       <main className="md:flex md:flex-row lg:px-8">
       <div className="hero-image md:max-w-md  ">
             <img src={heroMobile} className="w-full md:hidden" alt="Mobile hero image" />
-            {/* <img
-              src={heroDesktop}
-              className="hidden md:block md:min-h-full"
-              alt="hero image"
-            /> */}
       </div>
         <section className="hero-content my-8 md:max-w-sm md:pl-6 lg:max-w-md xl:max-w-lg xl:ml-28">
 
@@ -57,6 +51,11 @@ const App = () => {
                     className=" text-desaturatedRed"
                     alt="Arrow icon"
                   />{" "}
+                  <img
+                   src={errorIcon}
+                   className="absolute right-[4.5rem] top-[50%] transform -translate-y-1/2"
+                    alt="Error icon"
+                     />
                 </button>
               </form>
             </div>
