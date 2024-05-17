@@ -2,8 +2,31 @@ import logo from "./assets/images/logo.svg";
 import arrowIcon from "./assets/images/icon-arrow.svg";
 import errorIcon from "./assets/images/icon-error.svg";
 import heroMobile from "./assets/images/hero-mobile.jpg";
+import { useState } from "react";
 
 const App = () => {
+  const [email, setEmail] = useState(""); //state to hold input value
+  const [error, setError] = useState(""); //state to hold error message
+
+  //Function to check if email is correctly formatted
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  //Form submission handler
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!email) {
+      setError("Email address is required");
+    } else if (!validateEmail(email)) {
+      setError("Please provide a valid email")
+    } else {
+      setError("");
+      console.log("Form submitted: ", email);
+    }
+
+  }
   return (
     <>
       <header className="px-4 py-8 flex items-center top-0 left-0 w-full md:w-[50%] md:pl-8 md:mt-10 lg:ml-10 xl:ml-40 ">
@@ -34,16 +57,18 @@ const App = () => {
             </div>
 
             <div className="form relative text-desaturatedRed w-full my-12">
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <input
                   type="text"
                   placeholder="Email Address"
-                  className="border border-desaturatedRed border-opacity-50 rounded-3xl px-4 py-2 w-full text-[12px] "
+                  value={email}
+                  onChange={(e) =>{setEmail(e.target.value)}}
+                  className={`border border-desaturatedRed border-opacity-50 rounded-3xl px-4 py-2 w-full text-[12px] ${error ? 'border-softRed border-[2px]' : ''}`}
                 />
                 <button
                   type="submit"
                   name="email"
-                  className="absolute right-0 top-[50%] transform -translate-y-1/2 flex items-center justify-center border rounded-3xl text-white shadow w-[3.8rem] p-[.7rem] z-10"
+                  className="absolute right-0 top-[50%] transform -translate-y-1/2 flex items-center justify-center border rounded-3xl text-white shadow w-[3.8rem] p-[.7rem] z-10 cursor-pointer"
                 >
                   {" "}
                   <img
@@ -51,13 +76,19 @@ const App = () => {
                     className=" text-desaturatedRed"
                     alt="Arrow icon"
                   />{" "}
-                  <img
+
+                </button>
+                {error && (
+                  <p className="text-softRed text-xs py-4 px-4">
+                                      <img
                    src={errorIcon}
-                   className="absolute right-[4.5rem] top-[50%] transform -translate-y-1/2"
+                   className="absolute right-[4.5rem] top-[30%] transform -translate-y-1/2"
                     alt="Error icon"
                      />
-                </button>
-              </form>
+{error}
+                  </p>
+                )}
+                  </form>
             </div>
           </article>
         </section>
