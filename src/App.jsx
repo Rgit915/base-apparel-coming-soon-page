@@ -63,12 +63,12 @@ const App = () => {
                   placeholder="Email Address"
                   value={email}
                   onChange={(e) =>{setEmail(e.target.value)}}
-                  className={`border border-desaturatedRed border-opacity-50 rounded-3xl px-4 py-2 w-full text-[12px] ${error ? 'border-softRed border-[2px]' : ''}`}
+                  className={`border border-desaturatedRed border-opacity-50 rounded-3xl px-4 py-2 w-full text-[12px] text-darkGrayishRed font-bold ${error ? 'border-softRed border-[2px]' : ''}`}
                 />
                 <button
                   type="submit"
                   name="email"
-                  className="absolute right-0 top-[50%] transform -translate-y-1/2 flex items-center justify-center border rounded-3xl text-white shadow w-[3.8rem] p-[.7rem] z-10 cursor-pointer"
+                  className="absolute right-0 top-[50%] transform -translate-y-1/2 flex items-center justify-center border rounded-3xl text-white shadow w-[5rem] p-[.7rem] z-10 cursor-pointer"
                 >
                   {" "}
                   <img
@@ -79,14 +79,11 @@ const App = () => {
 
                 </button>
                 {error && (
-                  <p className="text-softRed text-xs py-4 px-4">
-                                      <img
-                   src={errorIcon}
-                   className="absolute right-[4.5rem] top-[30%] transform -translate-y-1/2"
-                    alt="Error icon"
-                     />
-{error}
-                  </p>
+                   <div className="absolute right-[4.5rem] top-[50%] transform -translate-y-1/2 flex flex-col items-center mt-4 space-y-4">
+                   <img src={errorIcon} className="mr-1" alt="Error icon" />
+                   <p className="text-red-500 text-xs">{error}</p>
+                 </div>
+
                 )}
                   </form>
             </div>
