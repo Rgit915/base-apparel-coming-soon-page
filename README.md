@@ -38,9 +38,6 @@ Users should be able to:
 
 <div>
        <img style="text-align: center;" src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/tablet-solution-preview.png" alt="Tablet solution preview" width="500">
-</div>
-
-<div>
        <img style="text-align: center;" src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/mobile-soultion-preview.png" alt="Mobile solution Screenshot" width="300">
 </div>
 
