@@ -30,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop solution preview](https://github.com/Rgit915/base-apparel-coming-soon-page/tree/master/src/assets/solution/desktop-solution-preview.jpg)
+![Desktop solution preview](https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/desktop-solution-preview.png)
 
-![Tablet solution preview](https://github.com/Rgit915/base-apparel-coming-soon-page/tree/master/src/assets/solution/tablet-solution-preview.jpg)
+![Tablet solution preview](https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/tablet-solution-preview.png)
 
 <div>
-       <img src="./src/assets/solution/mobile-solution-preview.png" alt="Mobile solution Screenshot" width="300">  <img src="./src/assets/images/solution/active-states-solution-preview.png" alt="Active states solution Screenshot" width="300">
+       <img src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/mobile-soultion-preview.png" alt="Mobile solution Screenshot" width="300">  <img src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/active-states-solution-preview.png" alt="Active states solution Screenshot" width="300">
 </div>
 
 
