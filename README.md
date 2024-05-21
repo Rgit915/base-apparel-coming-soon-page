@@ -34,10 +34,11 @@ Users should be able to:
 
 ![Tablet solution preview](https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/tablet-solution-preview.png)
 
-<div>
-       <img src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/mobile-soultion-preview.png" alt="Mobile solution Screenshot" width="300">  <img src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/active-states-solution-preview.png" alt="Active states solution Screenshot" width="300">
-</div>
+![Active states solution preview](https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/active-states-solution-preview.png)
 
+<div>
+       <img src="https://github.com/Rgit915/base-apparel-coming-soon-page/blob/master/src/assets/solution/mobile-soultion-preview.png" alt="Mobile solution Screenshot" width="300">
+</div>
 
 ### Links
 
